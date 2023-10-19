@@ -5,6 +5,7 @@ import math
 
 if __name__ == "__main__":
     y = float(input("y = "))
+    
     # Вычисление угла часовой стрелки
     angle_hour = y * 360 / (2 * math.pi)
     
@@ -16,7 +17,7 @@ if __name__ == "__main__":
     
     # Определение количества полных минут
     full_minutes = round(angle_minute / 6)
-    
+
     print(f"Угол для минутной стрелки: {angle_minute}")
     print(f"Количество полных часов: {full_hours}")
     print(f"Количество полных минут: {full_minutes}")
