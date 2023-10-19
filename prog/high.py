@@ -3,7 +3,8 @@
 
 import math
 
-def solve_clock_problem(y):
+if __name__ == "__main__":
+    y = float(input("y = "))
     # Вычисление угла часовой стрелки
     angle_hour = y * 360 / (2 * math.pi)
     
@@ -16,11 +17,6 @@ def solve_clock_problem(y):
     # Определение количества полных минут
     full_minutes = round(angle_minute / 6)
     
-    return angle_minute, full_hours, full_minutes
-
-if __name__ == "__main__":
-    y = float(input("y = "))
-    angle_minute, full_hours, full_minutes = solve_clock_problem(y)
     print(f"Угол для минутной стрелки: {angle_minute}")
     print(f"Количество полных часов: {full_hours}")
     print(f"Количество полных минут: {full_minutes}")
